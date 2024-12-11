@@ -12,9 +12,8 @@ class StoreApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: ThemeData.dark(),
       routes: {
-        HomeView.id: (context)=> const HomeView(),
+        HomeView.id: (context) => const HomeView(),
       },
       initialRoute: HomeView.id,
     );

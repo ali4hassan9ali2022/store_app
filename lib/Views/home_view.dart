@@ -64,15 +64,16 @@ class HomeView extends StatelessWidget {
         ],
       ),
       body: Padding(
-        padding: const EdgeInsets.only(left: 16, top: 16, right: 16),
+        padding: const EdgeInsets.only(left: 16, top: 70, right: 16),
         child: GridView.builder(
+          clipBehavior: Clip.none,
           gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
             crossAxisCount: 2,
             crossAxisSpacing: 10,
             mainAxisSpacing: 100,
             childAspectRatio: 1.3,
           ),
-          itemCount: 5,
+          itemCount: 20,
           itemBuilder: (context, index) {
             return const ProductCard();
           },
