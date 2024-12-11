@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:store_app/Widgets/product_card.dart';
 
 class HomeView extends StatelessWidget {
   const HomeView({super.key});
@@ -62,6 +63,7 @@ class HomeView extends StatelessWidget {
           ),
         ],
       ),
+      body:const ProductCard(),
     );
   }
 }
