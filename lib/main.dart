@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:store_app/Views/home_view.dart';
 
 void main() {
   runApp(const StoreApp());
@@ -12,6 +13,10 @@ class StoreApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData.dark(),
+      routes: {
+        HomeView.id: (context)=> const HomeView(),
+      },
+      initialRoute: HomeView.id,
     );
   }
 }
